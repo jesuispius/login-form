@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./login_style.css" />
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h2 class="form-header">Login</h2>
+
+            <div class="form-box">
+                <div id="email-input-control" class="form-controller">
+                    <label for="email-input">Email:</label>
+                    <input type="text" id="email-input" placeholder="Email address" name="">
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small></small>
+                </div>
+
+                <div id="username-input-control" class="form-controller">
+                    <label for="username-input">Username:</label>
+                    <input type="text" id="username-input" placeholder="Username" name="">
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small></small>
+                </div>
+
+                <div id="password-input-control" class="form-controller">
+                    <label for="password-input">Password:</label>
+                    <input type="password" id="password-input" placeholder="Password" name="">
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small></small>
+                </div>
+
+                <div id="password-confirm-input-control" class="form-controller">
+                    <label for="Check-password">Confirm Password:</label>
+                    <input type="password" id="Check-password" placeholder="Password Confirm" name="">
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small></small>
+                </div>
+
+                <button id="form-login-submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./form.js"></script>
+</body>
+</html>

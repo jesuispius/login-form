@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rebeccapurple;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.form-header{
+    text-align: center;
+}
+
+.form-box {
+    padding: 30px 40px;
+}
+
+.form-controller {
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 20px 0px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.form-controller label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-controller input {
+    display: block;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.form-controller.success input {
+    border-color: #2ecc71;
+}
+
+.form-controller.error input {
+    border-color: #c90505;
+}
+
+.form-controller i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-controller.success i.fa-check {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-controller.error i.fa-exclamation {
+    color: #c90505;
+    visibility: visible;
+}
+
+.form-controller small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-controller.success small{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-controller.error small {
+    color: #c90505;
+    visibility: visible;
+}
+
+.form-box button {
+    margin-top: 20px;
+    background-color: rebeccapurple;
+    color: white;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+}
